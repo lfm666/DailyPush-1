@@ -22,6 +22,7 @@ public class DailyPushController {
     @GetMapping("/sendTextcardMsg")
     public void sendTextcardMsg(){
         dailyPushUsers.sendTextcardMsg();
+        dailyPushUsers.sendExpression();
     }
 
     /**

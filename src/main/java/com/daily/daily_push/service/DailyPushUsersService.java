@@ -15,4 +15,6 @@ public interface DailyPushUsersService {
      * 图文消息
      */
     void sendNewsMsg();
+
+    void sendExpression();
 }

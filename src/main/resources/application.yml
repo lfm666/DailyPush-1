@@ -4,36 +4,40 @@
 
 server:
   #服务器端口
-  port: 8081
+  port: 9999
 
 #企业微信信息
 enterprise:
   #企业应用ID
   agentId: 1000002
   #企业应用Isecret
-  secret: 'vI6EbrkTjsVc_BduxRohx_nptav1sx_gUdPD7uKPWFo'
+  secret: 'KLZ80J0Ru9ZQFFqeHhZRSRiMpIqY4QHiD4hgP8Hoolg'
   #企业ID
-  corpId: 'wwb1b9bd3182cafb09'
+  corpId: 'wwcd8ad5db933d09cc'
 
 
 #天行数据相关
 tianApi:
   #天行数据key
-  tianApiKey: '4fe73488e9fccadbf8342912530a5d6e'
+  tianApiKey: '752fd6c44de81c0876349f2af5b199f6'
   #星座
-  XingZuoVlaue: '巨蟹'
+  XingZuoVlaue: '双子'
   #目标城市ID(推荐) 城市名
-  WeatherVlaue: 441702
+  WeatherVlaue: 110108
 
 
 #推送目标信息
 weixin:
   #推送目标企业微信账号，多个接收者请用|分隔，例如 "user1ID|user2ID"
-  userIds: "d41d8cd98f00b204e9800998ecf8427e"
+  userIds: "LiuFengMing|PaNiBuZhiDaoGenNiShuoYiXia"
 
 target:
   #日期格式必须为yyyy-MM-dd
   #生日
-  birthday: 1998-08-26
+  birthday: 1998-02-22
+  #农历生日
+  rBirthday: 19980126
+  #生日类型  true为农历  false为阳历
+  birthType: true
   #恋爱日期
-  romanticDate: 2022-08-26
+  romanticDate: 2022-07-26

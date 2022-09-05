@@ -35,7 +35,7 @@ public class WxConfig {
         jedisPoolConfig.setMaxIdle(8);
         jedisPoolConfig.setMaxTotal(18);
         // redis启动后，默认启动的是6379端口，和我的一样即可
-        Jedis jedis =new JedisPool(jedisPoolConfig,"localhost",6379,5000).getResource();
+        Jedis jedis =new JedisPool(jedisPoolConfig,"43.143.173.161",6379,5000, "123456").getResource();
 
         wxCpService.setWxCpConfigStorage(wxCpDefaultConfig);
         String wxAccessToken = "wx"+EnterpriseVo.getCorpId();
