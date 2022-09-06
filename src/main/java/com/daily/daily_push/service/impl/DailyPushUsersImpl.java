@@ -86,7 +86,8 @@ public class DailyPushUsersImpl implements DailyPushUsersService {
             //判断是否恋爱当天
             message.append("\n\uD83D\uDC91谈恋爱真的很麻烦，所以以后就麻烦你啦~");
         } else {
-            message.append("\n\uD83D\uDC91今天是我们恋爱的第").append(parameterList.getCountRomanticDate()).append("天噢~");
+//            message.append("\n\uD83D\uDC91今天是我们恋爱的第").append(parameterList.getCountRomanticDate()).append("天噢~");
+            message.append("\n\uD83D\uDC91今天是我们认识的第").append(parameterList.getCountRomanticDate()).append("天噢~");
         }
 
         //判断天气不为空
@@ -141,7 +142,7 @@ public class DailyPushUsersImpl implements DailyPushUsersService {
         //设置卡片跳转链接
         String url = "https://www.yuque.com/docs/share/00269daa-1dcb-402a-bb2a-9f838984443d?# 《企业微信每日早安推送操作流程》";
         String imgUrl = "https://wechat-push.oss-cn-hangzhou.aliyuncs.com/%E5%96%9D%E6%B0%B4%E5%B0%8F%E5%8A%A9%E6%89%8B.jpg";
-        sendMessage.sendNewsMsg(userIds, "喝水提醒", "温馨提示：适量喝水可以促进新陈代谢，润泽皮肤和咽喉噢~", url, imgUrl);
+        sendMessage.sendNewsMsg(userIds, "喝水提醒", "温馨提示：适量喝水可以促进新陈代谢，润泽皮肤和咽喉噢~", imgUrl, imgUrl);
     }
 
 
@@ -193,6 +194,6 @@ public class DailyPushUsersImpl implements DailyPushUsersService {
     @Override
     public void sendExpression() {
         String message = ExpressionConfig.EXPRESSION_LIST.get(new Random().nextInt(ExpressionConfig.EXPRESSION_LIST.size()));
-        sendMessage.sendTextcardMsg(userIds, "测试测试", message, OtherApi.getImgUrl());
+        sendMessage.sendTextcardMsg(userIds, "嘻嘻 ~~~", message, OtherApi.getImgUrl());
     }
 }

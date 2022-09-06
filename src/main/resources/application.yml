@@ -41,3 +41,12 @@ target:
   birthType: true
   #恋爱日期
   romanticDate: 2022-07-26
+
+wechat:
+  cp:
+    corpId: wwcd8ad5db933d09cc
+    appConfigs:
+      - agentId: 1000002
+        secret: KLZ80J0Ru9ZQFFqeHhZRSRiMpIqY4QHiD4hgP8Hoolg
+        token: lfm666
+        aesKey: 9iIKQAqTA28yi6i1dFG2yyfHsUiqwQoJIEtwOL6qgUL
